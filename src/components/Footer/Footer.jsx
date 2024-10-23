@@ -1,143 +1,119 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 import {Logo} from '../index'
+import { Link } from 'react-router-dom'
 
-function Footer() {
+const Footer = () => {
   return (
-    <section className="relative overflow-hidden py-10 bg-gray-400 border border-t-2 border-t-black">
-            <div className="relative z-10 mx-auto max-w-7xl px-4">
-                <div className="-m-6 flex flex-wrap">
-                    <div className="w-full p-6 md:w-1/2 lg:w-5/12">
-                        <div className="flex h-full flex-col justify-between">
-                            <div className="mb-4 inline-flex items-center">
-                                <Logo width="100px" />
-                            </div>
-                            <div>
-                                <p className="text-sm text-gray-600">
-                                    &copy; Copyright 2023. All Rights Reserved by DevUI.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="w-full p-6 md:w-1/2 lg:w-2/12">
-                        <div className="h-full">
-                            <h3 className="tracking-px mb-9  text-xs font-semibold uppercase text-gray-500">
-                                Company
-                            </h3>
-                            <ul>
-                                <li className="mb-4">
-                                    <Link
-                                        className=" text-base font-medium text-gray-900 hover:text-gray-700"
-                                        to="/"
-                                    >
-                                        Features
-                                    </Link>
-                                </li>
-                                <li className="mb-4">
-                                    <Link
-                                        className=" text-base font-medium text-gray-900 hover:text-gray-700"
-                                        to="/"
-                                    >
-                                        Pricing
-                                    </Link>
-                                </li>
-                                <li className="mb-4">
-                                    <Link
-                                        className=" text-base font-medium text-gray-900 hover:text-gray-700"
-                                        to="/"
-                                    >
-                                        Affiliate Program
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link
-                                        className=" text-base font-medium text-gray-900 hover:text-gray-700"
-                                        to="/"
-                                    >
-                                        Press Kit
-                                    </Link>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div className="w-full p-6 md:w-1/2 lg:w-2/12">
-                        <div className="h-full">
-                            <h3 className="tracking-px mb-9  text-xs font-semibold uppercase text-gray-500">
-                                Support
-                            </h3>
-                            <ul>
-                                <li className="mb-4">
-                                    <Link
-                                        className=" text-base font-medium text-gray-900 hover:text-gray-700"
-                                        to="/"
-                                    >
-                                        Account
-                                    </Link>
-                                </li>
-                                <li className="mb-4">
-                                    <Link
-                                        className=" text-base font-medium text-gray-900 hover:text-gray-700"
-                                        to="/"
-                                    >
-                                        Help
-                                    </Link>
-                                </li>
-                                <li className="mb-4">
-                                    <Link
-                                        className=" text-base font-medium text-gray-900 hover:text-gray-700"
-                                        to="/"
-                                    >
-                                        Contact Us
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link
-                                        className=" text-base font-medium text-gray-900 hover:text-gray-700"
-                                        to="/"
-                                    >
-                                        Customer Support
-                                    </Link>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div className="w-full p-6 md:w-1/2 lg:w-3/12">
-                        <div className="h-full">
-                            <h3 className="tracking-px mb-9  text-xs font-semibold uppercase text-gray-500">
-                                Legals
-                            </h3>
-                            <ul>
-                                <li className="mb-4">
-                                    <Link
-                                        className=" text-base font-medium text-gray-900 hover:text-gray-700"
-                                        to="/"
-                                    >
-                                        Terms &amp; Conditions
-                                    </Link>
-                                </li>
-                                <li className="mb-4">
-                                    <Link
-                                        className=" text-base font-medium text-gray-900 hover:text-gray-700"
-                                        to="/"
-                                    >
-                                        Privacy Policy
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link
-                                        className=" text-base font-medium text-gray-900 hover:text-gray-700"
-                                        to="/"
-                                    >
-                                        Licensing
-                                    </Link>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+    <div className=' bg-[#121212] flex justify-center items-center shadow-2xl shadow-white'>
+      {/* bg-[rgb(212,83,83)] */}
+        <div className='
+         text-white w-full my-4 mx-16 flex flex-col gap-y-5 max-md:mx-8'>
+           {/* bg-[#4b9f57] */}
+            <div className='
+             flex justify-between  max-[600px]:flex-col max-[600px]:gap-8'>
+
+              <div className='max-[600px]:text-center'>
+                <h3 className='text-2xl font-semibold inline'>BLOG </h3>
+                <h3 className='bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-transparent text-2xl font-semibold inline'>SITE</h3>
+              </div>
+
+              <div>
+                <p className='text-lg max-[600px]:text-center text-[#A1A1AA]'>Company</p>
+                <ul>
+                  <li className='max-[600px]:text-center hover:text-[#ABABAB]'>
+                    <Link
+                    to = "">
+                      Features
+                    </Link>
+                  </li>
+                  <li className='max-[600px]:text-center hover:text-[#ABABAB]'>
+                    <Link
+                    to = "/">
+                      Pricing
+                    </Link>
+                  </li>
+                  <li className='max-[600px]:text-center hover:text-[#ABABAB]'>
+                    <Link
+                    to = "/">
+                      Affiliate Program
+                    </Link>
+                  </li>
+                  <li className='max-[600px]:text-center hover:text-[#ABABAB]'>
+                    <Link
+                    to = "/">
+                      Press Kit
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+
+              <div>
+                <p className='text-lg max-[600px]:text-center text-[#A1A1AA]'>Support</p>
+                <ul>
+                  <li className='max-[600px]:text-center hover:text-[#ABABAB]'>
+                    <Link
+                    to = "/">
+                      Account
+                    </Link>
+                  </li>
+                  <li className='max-[600px]:text-center hover:text-[#ABABAB]'>
+                    <Link
+                    to = "/">
+                      Help
+                    </Link>
+                  </li>
+                  <li className='max-[600px]:text-center hover:text-[#ABABAB]'>
+                    <Link
+                    to = "/">
+                      Contact Us
+                    </Link>
+                  </li>
+                  <li className='max-[600px]:text-center hover:text-[#ABABAB]'>
+                    <Link
+                    to = "/">
+                      Customer Support
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+
+              <div>
+                <p className='text-lg max-[600px]:text-center text-[#A1A1AA]'>Legals</p>
+                <ul>
+                  <li className='max-[600px]:text-center hover:text-[#ABABAB]'>
+                    <Link
+                    to = "/">
+                      Terms & Conditions
+                    </Link>
+                  </li>
+                  <li className='max-[600px]:text-center hover:text-[#ABABAB]'>
+                    <Link
+                    to = "/">
+                      Privacy Policy
+                    </Link>
+                  </li>
+                  <li className='max-[600px]:text-center hover:text-[#ABABAB]'>
+                    <Link
+                    to = "/">
+                      Licensing
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+
             </div>
-        </section>
+            {/* bg-[#977934] */}
+            <div className='
+             flex justify-center text-center my-2'>
+              Copyright © 2024 BlogSite Technologies Pvt Ltd. All Rights Reserved.
+            </div>
+
+        </div>
+    </div>
+    
   )
 }
 
+
 export default Footer
+

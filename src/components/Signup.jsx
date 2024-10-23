@@ -28,7 +28,7 @@ function Signup() {
     }
 
   return (
-    <div className="flex items-center justify-center">
+    <div className="flex items-center justify-center text-black">
         <div className={`mx-auto w-full max-w-lg bg-gray-100 rounded-xl p-10 border border-black/10`}>
             <div className="mb-2 flex justify-center">
                 <span className="inline-block w-full max-w-[100px]">
@@ -36,7 +36,7 @@ function Signup() {
                 </span>
             </div>
             <h2 className="text-center text-2xl font-bold leading-tight">Sign up to create account</h2>
-            <p className="mt-2 text-center text-base text-black/60">
+            <p className="mt-2 py-2 text-center text-base text-black/60">
                 Already have an account?&nbsp;
                 <Link
                     to="/login"
