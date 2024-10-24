@@ -17,8 +17,8 @@ function Home() {
 
     if (posts.length === 0) {
         return (
-            <div className="w-full py-4 mt-4">
-                <h1 className="text-2xl font-bold hover:text-gray-500 text-center">
+            <div className="flex min-h-96 w-full py-4 my-4 justify-center items-center">
+                <h1 className="flex-col text-2xl  font-bold hover:text-gray-500 text-center">
                     Login to read posts
                 </h1>
             </div>
@@ -27,9 +27,9 @@ function Home() {
     return (
         <div className='w-full py-8'>
             <Container>
-                <div className='flex flex-wrap'>
+                <div className='flex flex-wrap justify-center'>
                     {posts.map((post) => (
-                        <div key={post.$id} className='p-2 w-1/4'>
+                        <div key={post.$id} className='p-2 md:w-1/3 max-md:w-1/2 max-sm:w-auto'>
                             <PostCard {...post} />
                         </div>
                     ))}

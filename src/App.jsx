@@ -30,12 +30,19 @@ function App() {
     <div className="min-h-screen flex flex-wrap content-between bg-[#121212]">
       <div className="w-full block text-white">
         <Header />
-        <main className="flex min-h-96 items-center justify-center">
+        <main className="flex items-center justify-center">
           <Outlet />
         </main>
         <Footer />
       </div>
     </div>
+    // <div className="min-h-screen  bg-[#121212] text-white">
+    //   <Header />
+    //   <main className="flex items-center justify-center">
+    //     <Outlet />
+    //   </main>
+    //   <Footer />
+    // </div>
   ) : null;
 }
 
